@@ -9,4 +9,8 @@ dni = st.number_input("INGRESE DNI A BUSCAR :",0,99999999)
 
 resultado = pc.buscar(dni)
 
-st.write("RESULTADOS ENCONTRADOS : " , resultado)
+if resultado.empty:
+    st.warning("⚠️ DNI no encontrado en la base de datos")
+else:
+    st.success("✅ DNI encontrado")
+    st.dataframe(resultado)
