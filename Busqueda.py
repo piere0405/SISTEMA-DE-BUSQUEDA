@@ -4,13 +4,13 @@ import Proceso as pc
 
 st.title("BUSQUEDA DE CLIENTE BASE GENERAL")
 
-dni = st.number_input("INGRESE DNI A BUSCAR :",0,99999999)
+dni = st.number_input("INGRESE DNI O NUMERO A BUSCAR :",0,999999999)
 
 
 resultado = pc.buscar(dni)
 
 if resultado.empty:
-    st.warning("⚠️ DNI no encontrado en la base de datos")
+    st.warning("⚠️ Cliente no encontrado en la base de datos")
 else:
-    st.success("✅ DNI encontrado")
+    st.success("✅ Cliente encontrado")
     st.dataframe(resultado)
