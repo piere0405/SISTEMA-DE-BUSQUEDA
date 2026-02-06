@@ -14,7 +14,7 @@ dato = st.number_input(
 if dato == 0:
     st.info("Ingrese un DNI (8 dígitos) o Teléfono (9 dígitos)")
 elif dato > 1 and dato < 9999999:
-    print("⚠️ Ingrese un numero valido")
+    st.warning("⚠️ Ingrese un numero valido")
 else:
     resultado = pc.buscar(dato)
 
