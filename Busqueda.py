@@ -20,10 +20,8 @@ with tab1:
 
     if dato == 0:
         st.info("Ingrese un DNI o Teléfono")
-    elif dato < 999999:
-        st.warning("⚠️ Número inválido")
     elif dato > 9999999999:
-        st.warning("Tiene mas de 8 digitos para un DNI y mas de 9 digitos para un telefono ⚠️")    
+        st.warning("⚠️ Número inválido")    
     else:
         resultado = pc.buscar(dato)
 
