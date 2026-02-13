@@ -21,7 +21,7 @@ def buscar(x):
             return r
 
         else:
-            return "Número inválido"
+            return pd.DataFrame()
 def encontrar(y):
        
        z= fd.loc[
