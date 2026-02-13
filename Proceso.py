@@ -24,7 +24,7 @@ def buscar(x):
             return "Número inválido"
 def encontrar(y):
        
-       z= df.loc[
+       z= fd.loc[
                 df["NumeroDocumento"]== y,
                 ["Nombre", "MONTO","LIQUIDO","Tasa","Plazo","CuotaActual"]
             ]
