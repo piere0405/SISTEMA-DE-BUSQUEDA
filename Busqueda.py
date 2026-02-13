@@ -49,6 +49,8 @@ with tab2:
         st.info("Ingrese un DNI")
     elif dato2 < 999999:
         st.warning("⚠️ DNI inválido")
+    elif dato2 > 99999999 :
+        st.warning("Debes ingresar dni de 8 digitos ⚠️")
     else:
         resultado2 = pc.encontrar(dato2)
 
