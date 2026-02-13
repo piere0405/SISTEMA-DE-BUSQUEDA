@@ -20,7 +20,7 @@ with tab1:
 
     if dato == 0:
         st.info("Ingrese un DNI o Teléfono")
-    elif dato < 9999999:
+    elif dato < 999999:
         st.warning("⚠️ Número inválido")
     elif dato > 9999999999:
         st.warning("Tiene mas de 8 digitos para un DNI y mas de 9 digitos para un telefono ⚠️")    
@@ -47,7 +47,7 @@ with tab2:
 
     if dato2 == 0:
         st.info("Ingrese un DNI")
-    elif dato2 < 9999999:
+    elif dato2 < 999999:
         st.warning("⚠️ DNI inválido")
     else:
         resultado2 = pc.encontrar(dato2)
