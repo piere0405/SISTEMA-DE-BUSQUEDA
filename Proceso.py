@@ -16,7 +16,7 @@ def buscar(x):
         elif len(x) == 8:
             r = df.loc[
                 df["DNI"].astype(str) == x,
-                ["DNI", "NOMBRE", "RAZON_SOCIAL", "NUMERO 1"]
+                ["DNI", "NOMBRE", "RAZON_SOCIAL", "NUMERO 1","NUMERO 2","NUMERO 3"]
             ]
             return r
 
