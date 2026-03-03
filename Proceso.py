@@ -26,6 +26,7 @@ def encontrar(y):
        
        z= fd.loc[
                 fd["NumeroDocumento"]== y,
-                ["Nombre", "MONTO","LIQUIDO","Tasa","Plazo","CuotaActual"]
+                ["Nombre", "MONTO","LIQUIDO","Tasa","Plazo","CuotaActual","PLAZA"]
+        
             ]
        return z
