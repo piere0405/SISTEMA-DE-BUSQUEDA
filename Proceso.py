@@ -5,7 +5,7 @@ fd = pd.read_excel("CLIENTECAMPAÑA.xlsx")
 
 def buscar(x):
        
-          x = str(int(x))
+        x = str(int(x))
           
         if len(x) == 9:
             r = df.loc[
