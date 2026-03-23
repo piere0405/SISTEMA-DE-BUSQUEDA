@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_excel("BBDD_MATRIZ_PP.xlsx", sheet_name=1)
+df = pd.read_excel("BBDD_GENERAL.xlsx", sheet_name=1)
 fd = pd.read_excel("CLIENTECAMPAÑA.xlsx")
 
 def buscar(x):
