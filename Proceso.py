@@ -4,8 +4,10 @@ df = pd.read_excel("BBDD_GENERAL.xlsx")
 fd = pd.read_excel("CLIENTECAMPAÑA.xlsx")
 
 def buscar(x):
-        x = str(int(x))  # número → string
-
+        try:
+          return str(int(float(valor)))  # convierte 987654321.0 → "987654321"
+        except:
+          return str(valor).strip()
         if len(x) == 9:
             r = df.loc[
                 (df["NUMERO 1"].astype(str).str.strip() == x)|  
