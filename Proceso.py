@@ -8,19 +8,22 @@ def buscar(x):
 
     columnas = ["DNI", "NOMBRE", "RAZON_SOCIAL", "NUMERO 1", "NUMERO 2", "NUMERO 3"]
 
+    # 🔥 Normalizar columnas UNA VEZ
+    df["NUMERO 1"] = df["NUMERO 1"].astype(str).str.replace(".0", "", regex=False).str.strip()
+    df["NUMERO 2"] = df["NUMERO 2"].astype(str).str.replace(".0", "", regex=False).str.strip()
+    df["NUMERO 3"] = df["NUMERO 3"].astype(str).str.replace(".0", "", regex=False).str.strip()
+    df["DNI"] = df["DNI"].astype(str).str.strip()
+
     if len(x) == 9:
-        r = df.loc[
-            df["NUMERO 1"].astype(str).str.strip() == x,
-            columnas
-        ]
-        return r
+        mask = (
+            (df["NUMERO 1"] == x) |
+            (df["NUMERO 2"] == x) |
+            (df["NUMERO 3"] == x)
+        )
+        return df.loc[mask, columnas]
 
     elif len(x) == 8:
-        r = df.loc[
-            df["DNI"].astype(str).str.strip() == x,
-            columnas
-        ]
-        return r
+        return df.loc[df["DNI"] == x, columnas]
 
     else:
         return pd.DataFrame(columns=columnas)
