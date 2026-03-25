@@ -7,7 +7,7 @@ def buscar(x):
        
         x = str(int(x))
           
-        if len(x) == 10:
+        if len(x) == 9:
             r = df.loc[
                 df["NUMERO 1"].astype(str).str.strip() == x ,
                 ["DNI", "NOMBRE", "RAZON_SOCIAL", "NUMERO 1","NUMERO 2","NUMERO 3"]
@@ -22,7 +22,7 @@ def buscar(x):
             return r
 
         else:
-            return pd.DataFrame()
+            return st.warning(f"NO SE ECNONTRO{x}")
 def encontrar(y):
        
        z= fd.loc[
