@@ -17,7 +17,7 @@ with tab1:
         step=1,
         key="Ingrese un DNI o Teléfono"
     )
-
+    medicion = len(dato)
     if dato == 0:
         st.info("Ingrese un DNI o Teléfono")
     elif dato < 999999:
@@ -31,7 +31,7 @@ with tab1:
             st.warning(F"⚠️ Cliente no encontrado {len(dato)}")
         else:
             st.success("✅ Cliente encontrado")
-            st.dataframe(resultado, use_container_width=True)
+            st.dataframe(medicion, use_container_width=True)
 
 # ================= TAB 2 =================
 with tab2:
