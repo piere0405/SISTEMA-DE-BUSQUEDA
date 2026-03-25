@@ -28,7 +28,7 @@ with tab1:
         resultado = pc.buscar(dato)
 
         if resultado.empty:
-            st.warning(F"⚠️ Cliente no encontrado {dato}")
+            st.warning(F"⚠️ Cliente no encontrado {len(dato)}")
         else:
             st.success("✅ Cliente encontrado")
             st.dataframe(resultado, use_container_width=True)

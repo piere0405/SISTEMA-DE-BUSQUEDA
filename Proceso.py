@@ -22,7 +22,7 @@ def buscar(x):
             return r
 
         else:
-            return st.warning(f"NO SE ECNONTRO{len(x)}")
+            return pd.dataframe()
 def encontrar(y):
        
        z= fd.loc[
