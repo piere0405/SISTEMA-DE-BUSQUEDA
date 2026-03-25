@@ -9,9 +9,7 @@ def buscar(x):
           
         if len(x) == 9:
             r = df.loc[
-                (df["NUMERO 1"].astype(str).str.strip() == x)|  
-                (df["NUMERO 2"].astype(str).str.strip() == x)| 
-                (df["NUMERO 3"].astype(str).str.strip() == x) ,
+                df["NUMERO 1"].astype(str).str.strip() == x ,
                 ["DNI", "NOMBRE", "RAZON_SOCIAL", "NUMERO 1","NUMERO 2","NUMERO 3"]
             ]
             return r
