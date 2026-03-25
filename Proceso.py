@@ -8,7 +8,7 @@ def buscar(x):
 
     columnas = ["DNI", "NOMBRE", "RAZON_SOCIAL", "NUMERO 1", "NUMERO 2", "NUMERO 3"]
 
-    # 🔥 Normalizar columnas UNA VEZ
+    # 🔥 Normalizar 
     df["NUMERO 1"] = df["NUMERO 1"].astype(str).str.replace(".0", "", regex=False).str.strip()
     df["NUMERO 2"] = df["NUMERO 2"].astype(str).str.replace(".0", "", regex=False).str.strip()
     df["NUMERO 3"] = df["NUMERO 3"].astype(str).str.replace(".0", "", regex=False).str.strip()
