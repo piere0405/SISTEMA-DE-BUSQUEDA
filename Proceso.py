@@ -22,7 +22,7 @@ def buscar(x):
             return r
 
         else:
-            return st.warning(f"NO SE ECNONTRO{x}")
+            return st.warning(f"NO SE ECNONTRO{len(x)}")
 def encontrar(y):
        
        z= fd.loc[
