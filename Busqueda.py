@@ -17,7 +17,7 @@ with tab1:
         step=1,
         key="Ingrese un DNI o Teléfono"
     )
-    medicion = len(dato)
+    
     if dato == 0:
         st.info("Ingrese un DNI o Teléfono")
     elif dato < 999999:
