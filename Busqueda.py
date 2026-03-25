@@ -31,7 +31,7 @@ with tab1:
             st.warning("⚠️ Cliente no encontrado")
         else:
             st.success("✅ Cliente encontrado")
-            st.dataframe(medicion, use_container_width=True)
+            st.dataframe(resultado, use_container_width=True)
 
 # ================= TAB 2 =================
 with tab2:
