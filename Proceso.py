@@ -31,7 +31,7 @@ def encontrar(y):
        
        z= fd.loc[
                 fd["NumeroDocumento"]== y,
-                ["Nombre", "MONTO","LIQUIDO","Tasa","Plazo","CuotaActual","PLAZA"]
+                ["Nombre", "MONTO","LIQUIDO","Tasa","Plazo","CuotaActual","PLAZA","NUMERO_PRINCIPAL"]
         
             ]
        return z
