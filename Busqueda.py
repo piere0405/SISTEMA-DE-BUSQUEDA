@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 import Proceso as pc
 
-st.title("🔍 HERRAMIENTA INFORMATIVA - AGOSTO ")
+st.title("🔍 HERRAMIENTA INFORMATIVA - SEPTIEMBRE")
 
 tab1, tab2 = st.tabs(["👤 Datos Cliente", "🎯 Verificacion Campaña"])
 
